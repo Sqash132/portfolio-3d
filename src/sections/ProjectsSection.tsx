@@ -53,17 +53,19 @@ const projects = [
   },
   {
     num: "04",
-    tech: "Java, Machine Learning, Ensemble Learning",
-    name: "Climate Prediction",
-    desc: "Gender & Climate Prediction Model",
+    tech: "Python, OpenCV, YOLOv8, Streamlit, Ollama, Mistral",
+    name: "Quality Inspect",
+    desc: "AI-Powered Manufacturing Quality Inspection System",
     highlights: [
-      "ML-based predictive model for gender demographics and climate analysis",
-      "Achieved 82% prediction accuracy using ensemble learning",
+      "Detects screws, bolts, nuts, gears, and bearings with computer vision",
+      "Identifies eight manufacturing defects and classifies their severity",
+      "Generates human-readable inspection reports locally with Ollama and Mistral",
     ],
+    href: "https://github.com/Sqash132/quality-inspect",
     images: {
-      leftTop: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
-      leftBottom: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-      right: "https://images.unsplash.com/photo-1518104593124-ac2eeb9a444a?w=1200&q=80"
+      leftTop: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
+      leftBottom: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=800&q=80",
+      right: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1200&q=80"
     }
   }
 ];
@@ -129,7 +131,7 @@ export const ProjectsSection: React.FC = () => {
                     </div>
                   </div>
                   <div className="mt-2 md:mt-0">
-                    <LiveProjectButton />
+                    <LiveProjectButton href={proj.href} />
                   </div>
                 </div>
 
